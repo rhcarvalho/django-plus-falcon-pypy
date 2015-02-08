@@ -1,0 +1,44 @@
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        TornadoServer/4.1
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /falcon/json
+Document Length:        17 bytes
+
+Concurrency Level:      200
+Time taken for tests:   49.971 seconds
+Complete requests:      20000
+Failed requests:        186
+   (Connect: 0, Receive: 93, Length: 93, Exceptions: 0)
+Write errors:           0
+Total transferred:      2591030 bytes
+HTML transferred:       338827 bytes
+Requests per second:    400.23 [#/sec] (mean)
+Time per request:       499.712 [ms] (mean)
+Time per request:       2.499 [ms] (mean, across all concurrent requests)
+Transfer rate:          50.64 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  327 2183.9     88   22362
+Processing:     1  171  93.3    149     958
+Waiting:        0  118  74.9     97     868
+Total:         10  498 2179.2    238   22415
+
+Percentage of the requests served within a certain time (ms)
+  50%    238
+  66%    324
+  75%    381
+  80%    407
+  90%    456
+  95%    497
+  98%    892
+  99%  21785
+ 100%  22415 (longest request)
