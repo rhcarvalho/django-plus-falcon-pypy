@@ -1,0 +1,4 @@
+.git
+*.pyc
+db.sqlite3
+django_static
