@@ -1,5 +1,5 @@
 Django + Falcon on PyPy
------------------------
+=======================
 
 This project demos how to combine a Django and a Falcon WSGI app into a hybrid WSGI app with custom dispatching.
 Yeah, it is meant just for me to play with Docker, PyPy and Falcon.
