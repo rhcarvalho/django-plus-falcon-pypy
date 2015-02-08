@@ -1,3 +1,4 @@
+import json
 import sys
 import platform
 import datetime
@@ -17,6 +18,16 @@ class HelloResource(object):
         ])
 
 
+class JSONResource(object):
+    encode = json.JSONEncoder(
+        check_circular=False,
+        separators=(',', ':'),
+    ).encode
+
+    def on_get(self, req, resp):
+        resp.body = self.encode({"hello": "world"})
+
+
 def not_found(req, resp):
     resp.body = "%s(%s)" % (
         req.__class__.__name__,
@@ -26,4 +37,5 @@ def not_found(req, resp):
 
 app = falcon.API()
 app.add_route('/', HelloResource())
+app.add_route('/json', JSONResource())
 app.add_sink(not_found)

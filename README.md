@@ -28,3 +28,8 @@ URLs
     /falcon/404 :: Request info as seen by Falcon
     /admin      :: Django admin interface (user: admin, password: admin)
     /random     :: Hello from a random subapp
+
+For benchmarking:
+
+    /json        :: {"hello":"world"}
+    /falcon/json :: {"hello":"world"}
