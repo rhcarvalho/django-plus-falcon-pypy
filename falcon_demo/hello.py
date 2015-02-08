@@ -6,7 +6,7 @@ from pprint import pformat
 import falcon
 
 
-class HelloResource:
+class HelloResource(object):
     def on_get(self, req, resp):
         resp.body = "\n".join([
             "Hello from Falcon!",
